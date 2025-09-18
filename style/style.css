@@ -410,3 +410,7 @@ datalist {
 .Yspace {
   transform: translateY(5.5vh);
 }
+.footer {
+  size: large;
+  color: #f1edee;
+}
