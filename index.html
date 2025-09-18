@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QRScannerLiceoDannunzio</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="settings_button_container" class="settings_invisible">
+      <div id="settings_container">
+        <div id="check_circle"></div>
+        <div id="change_status_button_container"></div>
+        <img src="./img/svg/impo.svg" alt="Settings" class="button" />
+      </div>
+    </div>
+    <div id="main_container">
+      <!--UNO-->
+      <div id="uno" style="width: 600px; height: 600px"></div>
+      <!--DUE-->
+      <div id="due">
+        <div id="display">
+          Qr-code scanner Liceo D'Annunzio <br />a cura di Giorgio Di Carlo
+        </div>
+      </div>
+      <!--TRE-->
+      <div id="input">
+        <input
+          list="ip_inputs"
+          id="ip_input"
+          type="text"
+          placeholder="Ip Adress"
+        />
+        <datalist id="ip_inputs">
+          <option value="Cantagallo gay"></option>
+          <option value="192.168.1.55"></option>
+          <option value="192.168.1.53"></option>
+          <option value="172.20.10.11"></option>
+          <option value="172.20.10.13"></option>
+          <option value="172.20.10.5"></option>
+        </datalist>
+        <div id="submit" class="button">Join</div>
+      </div>
+    </div>
+    <!--POPUP-->
+    <div id="sign_in_log_in" class="form_invisible">
+      <div id="form_container">
+        <div class="form_escape1 form_escape button">
+          <img src="./img/svg/croce.svg" alt="cross" />
+        </div>
+        <div id="form_button_container">
+          <div id="signin" class="button"><h3>Sign up</h3></div>
+          <div id="login" class="button"><h3>Sign In</h3></div>
+        </div>
+      </div>
+    </div>
+    <!--POPUP-->
+    <div id="form" class="form_invisible">
+      <div id="form_container">
+        <div class="form_escape2 form_escape button">
+          <img src="./img/svg/croce.svg" alt="cross" />
+        </div>
+        <div class="form_back1 form_back button">
+          <img src="./img/svg/angolo-sinistra.svg" alt="back" />
+        </div>
+        <h2>Sign in</h2>
+        <input type="text" id="UserId_input" placeholder="Digit your ID" />
+        <div id="UserId_button" class="button">
+          <div id="UserId_h4">Connect</div>
+        </div>
+      </div>
+    </div>
+    <!--POPUP-->
+    <div id="divsignin" class="form_invisible">
+      <div id="form_container">
+        <div class="form_escape3 form_escape button">
+          <img src="./img/svg/croce.svg" alt="cross" />
+        </div>
+        <div class="form_back2 form_back button">
+          <img src="./img/svg/angolo-sinistra.svg" alt="back" />
+        </div>
+        <h2>Sign up</h2>
+        <input type="text" id="UserId_inputS" placeholder="User-Id" />
+        <input
+          type="password"
+          id="ServerPassword_input"
+          placeholder="Password"
+        />
+        <div id="signin_big_button" class="button">
+          <div id="UserId_h4">Connect</div>
+        </div>
+      </div>
+    </div>
+    <!--BAN_MENU-->
+    <div id="ban_menu_button_container">
+      <img src="./img/svg/menuburger.svg" alt="" class="button" />
+    </div>
+    <div id="ban_menu_container" class="form_invisible">
+      <div id="ban_menu_2_container">
+        <h3>Admin section</h3>
+        <img
+          src="./img/svg/croce.svg"
+          class="form_escape button"
+          id="form_escape4"
+        />
+        <div id="display2"></div>
+        <input
+          type="text"
+          id="ban_name"
+          class="input"
+          list="name_input"
+          placeholder="Name"
+        />
+        <datalist id="name_input"></datalist>
+        <div id="ban_button_container">
+          <div id="check" class="button">Users</div>
+          <div id="ban" class="button">Ban</div>
+          <div id="unban" class="button">UnBan</div>
+        </div>
+        <input
+          type="password"
+          id="ban_password"
+          class="input"
+          placeholder="Admin password"
+        />
+      </div>
+    </div>
+    <!--BAN MENU-->
+    <img id="pause" class="button" src="./img/svg/pause.svg" alt="" />
+    <img id="play" class="button" src="./img/svg/play.svg" alt="" />
+    <script src="./js/camera.js"></script>
+    <script src="./js/qr_scanner.js"></script>
+  </body>
+</html>
